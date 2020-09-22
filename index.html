@@ -13,8 +13,219 @@
     <title>My Tv Station</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <div class="mobile-nav-container">
+        <div class="user-logo-container">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="rts-logo-container">
+          <a href="#"
+            ><img src="./images/Rtslogo.svg" alt="" class="rts-logo"
+          /></a>
+        </div>
+        <div class="menu-container" id="menu-dropdown">
+          <i class="fas fa-bars"></i>
+          <h4>Menu</h4>
+        </div>
+      </div>
+    </nav>
+    <!-- End Mobile Nav -->
+    <!-- Mobile Dropdown -->
+    <aside class="mobile-dropdown" id="mobile-dropdown">
+      <div class="mobile-container">
+        <div class="mobile-search">
+          <input type="text" class="mobile-search-input" placeholder="Search" />
+          <i class="fas fa-search i-input"></i>
+          <div class="menu-division"></div>
+        </div>
+        <div class="mobile-fields">
+          <h4>info</h4>
+          <div class="menu-division"></div>
+          <h4>sport</h4>
+          <div class="menu-division"></div>
+          <h4>culture</h4>
+          <div class="menu-division"></div>
+          <h4>play</h4>
+          <div class="menu-division"></div>
+          <h4>radio <i class="fas fa-caret-down"></i></h4>
+          <div class="menu-division"></div>
+          <h4>tv <i class="fas fa-caret-down"></i></h4>
+          <div class="menu-division"></div>
+          <h4>meteo</h4>
+        </div>
+        <div class="mobile-social-icons">
+          <h5 class="mobile-social-text">Follow us:</h5>
+          <ul class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-twitch"></i>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- End Mobile Dropdown -->
+    <!-- Main Hero -->
+    <section class="section">
+      <div class="main-hero">
+        <article class="hero-img">
+          <img src="./images/talkshow1.jpg" alt="news-img" />
+        </article>
+        <div class="hero-bottom"></div>
 
+        <article class="hero-news">
+          <div class="hero-news-container">
+            <h2 class="hero-news-pretitle">Television</h2>
+            <h1 class="hero-news-title">Live with the Stars!</h1>
+            <h4 class="hero-news-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+              voluptate asperiores porro fugit voluptas praesentium!
+            </h4>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- End main Hero -->
+    <!-- Television  -->
+    <section class="section television">
+      <div class="section-center">
+        <!-- Section Title -->
+        <div class="section-title">
+          <h4>En direct</h4>
+          <div class="underline"></div>
+        </div>
+        <!-- End section Title -->
+        <!-- Live TV -->
+        <article class="live-tv">
+          <!-- Single Live -->
+          <div class="live-container">
+            <div class="live-img">
+              <img src="./images/liveshow1.jpg" alt="live-now" />
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="live-info">
+              <div class="live-title">
+                <h3 class="live-channel-1">1</h3>
+                <h4 class="live-show-name">Diving with the turtles</h4>
+              </div>
+              <div class="live-timestamp-container">
+                <div class="live-timestamp">
+                  <div class="live-times-container">
+                    <div class="time-start">13:25</div>
+                    <div class="time-end">14:47</div>
+                  </div>
+                  <div class="live-underline-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Live -->
+          <!-- Single Live -->
+          <div class="live-container">
+            <div class="live-img">
+              <img src="./images/liveshow2.jpg" alt="live-now" />
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="live-info">
+              <div class="live-title">
+                <h3 class="live-channel-2">2</h3>
+                <h4 class="live-show-name">Holy Wars</h4>
+              </div>
+              <div class="live-timestamp-container">
+                <div class="live-timestamp">
+                  <div class="live-times-container">
+                    <div class="time-start">14:25</div>
+                    <div class="time-end">15:53</div>
+                  </div>
+                  <div class="live-underline-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Live -->
+          <!-- Single Live -->
+          <div class="live-container">
+            <div class="live-img">
+              <img src="./images/liveshow3.jpg" alt="live-now" />
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="live-info">
+              <div class="live-title">
+                <h3 class="live-channel-3">Info</h3>
+                <h4 class="live-show-name">Suisse 24hs</h4>
+              </div>
+              <div class="live-timestamp">
+                <div class="time-start">Live right now</div>
+                <div class="live-underline-3"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Live -->
+        </article>
+        <!-- End live TV -->
+        <!-- Radio -->
+        <article class="live-radio">
+          <div class="radio-container">
+            <!-- Single radio -->
+            <div class="single-radio">
+              <div class="single-radio-header">
+                <span><i class="fas fa-utensils radio-show"></i></span>
+              </div>
+              <div class="single-radio-title">
+                <h3 class="radio-title">Cooking with Jim</h3>
+              </div>
+              <div class="single-radio-icon">
+                <i class="fas fa-volume-up radio-icon"></i>
+              </div>
+            </div>
+            <!-- End single radio -->
+            <!-- Single radio -->
+            <div class="single-radio">
+              <div class="single-radio-header">
+                <span><i class="fas fa-guitar"></i></span>
+              </div>
+              <div class="single-radio-title">
+                <h3 class="radio-title">Rock and roll</h3>
+              </div>
+              <div class="single-radio-icon">
+                <i class="fas fa-volume-up radio-icon"></i>
+              </div>
+            </div>
+            <!-- End single radio -->
+            <!-- Single radio -->
+            <div class="single-radio">
+              <div class="single-radio-header">
+                <span><i class="fas fa-balance-scale-left"></i></span>
+              </div>
+              <div class="single-radio-title">
+                <h3 class="radio-title">Economics</h3>
+              </div>
+              <div class="single-radio-icon">
+                <i class="fas fa-volume-up radio-icon"></i>
+              </div>
+            </div>
+            <!-- End single radio -->
+            <!-- Single radio -->
+            <div class="single-radio">
+              <div class="single-radio-header">
+                <span><i class="fas fa-running"></i></span>
+              </div>
+              <div class="single-radio-title">
+                <h3 class="radio-title">Sport</h3>
+              </div>
+              <div class="single-radio-icon">
+                <i class="fas fa-volume-up radio-icon"></i>
+              </div>
+            </div>
+            <!-- End single radio -->
+          </div>
+        </article>
+        <!-- End Radio -->
+      </div>
+    </section>
+
+    <!-- End Television -->
     <!-- JS -->
     <script src="./app.js"></script>
   </body>
