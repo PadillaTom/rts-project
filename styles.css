@@ -412,7 +412,7 @@ ul {
 .live-img img {
   object-fit: cover;
   width: 100%;
-
+  height: 100%;
   position: relative;
 }
 .live-img i {
@@ -495,6 +495,28 @@ ul {
   height: 2px;
   margin-bottom: 0.4rem;
 }
+@media screen and (min-width: 700px) {
+  .live-tv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.5rem;
+  }
+  .live-container {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15),
+      -1px -1px 5px rgba(0, 0, 0, 0.15);
+  }
+  .live-info {
+    justify-content: space-around;
+    margin: 1rem;
+  }
+  .live-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 @media screen and (min-width: 850px) {
   .live-info {
     font-size: 1.7rem;
@@ -509,6 +531,7 @@ ul {
     font-size: 1.3rem;
   }
 }
+
 /* Radio */
 .radio-container {
   margin-top: 2rem;
@@ -547,6 +570,17 @@ ul {
 .single-radio-icon {
   justify-self: right;
   color: var(--NavColor);
+}
+@media screen and (min-width: 700px) {
+  .radio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .economics-last-radio {
+    border-bottom: 0.7px solid #b3b3b3;
+  }
 }
 @media screen and (min-width: 825px) {
   .single-radio-title {
@@ -657,6 +691,11 @@ ul {
   color: var(--NavColor);
 }
 @media screen and (min-width: 850px) {
+  .newspaper-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
   .main-article-info {
     font-size: 2.25rem;
   }
@@ -670,6 +709,7 @@ ul {
     font-size: 2rem;
   }
 }
+
 /* End Newspaper */
 /* ::::::::::::: Gallery ::::::::::::: */
 
@@ -764,6 +804,12 @@ ul {
   }
   .single-slide h6 {
     font-size: 1.5rem;
+  }
+  .section-gallery {
+    height: 100vh;
+  }
+  .gallery-container {
+    height: 100vh;
   }
 }
 @media screen and (min-width: 992px) {
@@ -868,6 +914,7 @@ ul {
 /* ::::::::::::: Footer ::::::::::::: */
 .section-footer {
   background-color: rgb(12, 12, 12);
+  margin: 0 auto;
 }
 .footer-division {
   height: 0.15rem;
@@ -961,9 +1008,6 @@ ul {
   cursor: pointer;
 }
 @media screen and (min-width: 850px) {
-  .footer-search {
-    display: none;
-  }
   .back-top {
     font-size: 4rem;
   }
