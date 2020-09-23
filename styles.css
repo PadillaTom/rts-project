@@ -675,24 +675,21 @@ ul {
     rgba(38, 38, 38, 0.885),
     rgba(0, 0, 0, 0.796)
   );
-  height: 50vh;
 }
 .tv-title {
   color: rgba(255, 255, 255, 0.926);
   padding-top: 2rem;
   width: 95vw;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
 .tv-title .underline {
-  margin-bottom: 0;
+  margin-bottom: 0rem;
   background: rgba(255, 255, 255, 0.926);
 }
 .gallery-container {
   width: 90vw;
   margin: 0 auto;
   height: 40vh;
-  max-width: 80rem;
   position: relative;
   overflow: hidden;
   padding-bottom: 25rem;
@@ -749,7 +746,7 @@ ul {
 .prevBtn {
   border: none;
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 1.7rem;
   left: 1rem;
   transition: var(--MainTransition);
 }
@@ -760,13 +757,13 @@ ul {
 .nextBtn {
   border: none;
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 1.7rem;
   right: 1rem;
   transition: var(--MainTransition);
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: ) @media screen and (min-width: 850px) {
   .section-gallery {
-    height: 50vh;
+    min-height: 100vh;
   }
   .tv-title {
     margin-bottom: 1.5rem;
