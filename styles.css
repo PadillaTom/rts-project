@@ -261,7 +261,6 @@ ul {
   .login-container h6:hover {
     color: white;
   }
-
   .top-nav-icons {
     display: flex;
     flex-direction: row;
@@ -309,6 +308,14 @@ ul {
     margin: 0.3rem;
     font-size: 7px;
     font-weight: 200;
+  }
+}
+@media screen and (min-width: 900px) {
+  .top-nav {
+    border-bottom: 0.3px solid var(--TopNavTextColor);
+  }
+  .main-nav-desk {
+    border-bottom: 1px ridge rgba(255, 255, 255, 0.248);
   }
 }
 /* End Mobile Navbar */
@@ -743,12 +750,8 @@ ul {
   right: 1rem;
   transition: var(--MainTransition);
 }
-@media screen and (min-width: 430px) {
-}
+
 @media screen and (min-width: 850px) {
-  .section-gallery {
-    min-height: 100vh;
-  }
   .tv-title {
     margin-bottom: 1.5rem;
   }
@@ -763,6 +766,13 @@ ul {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .prevBtn,
+  .nextBtn {
+    font-size: 2rem;
+  }
+}
+
 /* End Gallery */
 /* ::::::::::::: More ::::::::::::: */
 .more-container {
@@ -964,8 +974,14 @@ ul {
     font-size: 1.7rem;
   }
   .footer-container {
-    justify-content: center;
-    column-gap: 6rem;
+    justify-content: start;
+    column-gap: 20rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-container {
+    justify-content: start;
+    column-gap: 35rem;
   }
 }
 /* End Footer */
