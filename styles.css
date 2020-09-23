@@ -56,11 +56,16 @@ ul {
   --NavColor: #333333;
   --NavTopColor: #111111;
   --RtsColor: #af001e;
+  --TopNavTextColor: #bababa;
   /*  Other */
   --MainTransition: 0.3s ease all;
 }
 
 /* ::::::::::::: Mobile Navbar ::::::::::::: */
+.desktop-navs-container {
+  display: none;
+}
+
 .mobile-nav {
   background-color: var(--NavColor);
   transition: var(--MainTransition);
@@ -215,12 +220,103 @@ ul {
   color: var(--NavColor);
   font-size: 1.5rem;
 }
+/* Queries */
+@media screen and (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-navs-container {
+    display: block;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--NavTopColor);
+    padding: 0.5rem;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--TopNavTextColor);
+    margin-left: 0.5rem;
+  }
+  .login-container i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: var(--MainTransition);
+    cursor: pointer;
+  }
+  .login-container i:hover {
+    color: white;
+  }
+  .login-container h6 {
+    letter-spacing: 1.3px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: var(--MainTransition);
+  }
+  .login-container h6:hover {
+    color: white;
+  }
+
+  .top-nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--TopNavTextColor);
+    margin-right: 0.5rem;
+  }
+  .topnav-icons {
+    font-size: 1 rem;
+  }
+  .topnav-icons span {
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: var(--MainTransition);
+  }
+  .topnav-icons span:hover {
+    color: white;
+  }
+  .main-nav-desk {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--NavColor);
+    align-items: center;
+  }
+  .nav-links-list {
+    display: flex;
+  }
+  .nav-link-desk {
+    color: white;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  .desk-logo-container {
+    width: 5rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .menu-division-desk {
+    color: white;
+    margin: 0.3rem;
+    font-size: 7px;
+    font-weight: 200;
+  }
+}
 /* End Mobile Navbar */
 
 /* ::::::::::::: Main Hero ::::::::::::: */
 .main-hero {
   background-color: var(--BgColor);
-  width: 100vw;
+  max-width: 100vw;
   position: relative;
 }
 .hero-img img {
@@ -750,3 +846,6 @@ ul {
   cursor: pointer;
 }
 /* End Footer */
+
+/* :::::::::::::::::: Query for Desktop :::::::::::::::::::::::::::::: */
+/* Navs */
