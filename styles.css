@@ -368,9 +368,9 @@ ul {
 }
 .single-newspaper {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15), -1px -1px 5px rgba(0, 0, 0, 0.15);
-  max-width: 97%;
+  max-width: 100%;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
 }
 .newspaper-header {
   padding: 0.5rem 0.5rem;
@@ -545,7 +545,7 @@ ul {
   width: 95vw;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 .single-more-container {
   display: grid;
