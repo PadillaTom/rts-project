@@ -665,39 +665,20 @@ ul {
 }
 /* End Newspaper */
 /* ::::::::::::: Gallery ::::::::::::: */
-.section-gallery {
-  background: linear-gradient(
-    to bottom,
-    rgba(70, 70, 70, 0.665),
-    rgba(0, 0, 0, 0.816),
-    rgba(70, 70, 70, 0.665),
-    rgba(0, 0, 0, 0.796),
-    rgba(38, 38, 38, 0.885),
-    rgba(0, 0, 0, 0.796)
-  );
-}
-.tv-title {
-  color: rgba(255, 255, 255, 0.926);
-  padding-top: 2rem;
-  width: 95vw;
-  margin: 0 auto;
-}
-.tv-title .underline {
-  margin-bottom: 0rem;
-  background: rgba(255, 255, 255, 0.926);
-}
+
 .gallery-container {
-  width: 90vw;
-  margin: 0 auto;
-  height: 40vh;
+  width: 100%;
+  height: 70vh;
   position: relative;
   overflow: hidden;
-  padding-bottom: 25rem;
 }
 .single-slide {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
   display: grid;
   place-items: center;
   transition: var(--MainTransition);
@@ -706,6 +687,12 @@ ul {
 }
 .slide-img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .single-slide h2 {
@@ -727,17 +714,12 @@ ul {
 .gallery-img-container {
   position: relative;
   margin-bottom: 1.5rem;
-}
-.gallery-img-overlay {
-  position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
 }
-
 .gallery-btn {
   color: white;
-  background: rgba(255, 255, 255, 0.111);
+  background: rgba(48, 48, 48, 0.672);
   padding: 0.5rem 2rem;
   border-radius: 5rem;
   box-shadow: 1px 1px 3px rgba(160, 160, 160, 0.529);
@@ -746,7 +728,7 @@ ul {
 .prevBtn {
   border: none;
   position: absolute;
-  bottom: 1.7rem;
+  bottom: 2rem;
   left: 1rem;
   transition: var(--MainTransition);
 }
@@ -757,11 +739,13 @@ ul {
 .nextBtn {
   border: none;
   position: absolute;
-  bottom: 1.7rem;
+  bottom: 2rem;
   right: 1rem;
   transition: var(--MainTransition);
 }
-@media screen and (min-width: ) @media screen and (min-width: 850px) {
+@media screen and (min-width: 430px) {
+}
+@media screen and (min-width: 850px) {
   .section-gallery {
     min-height: 100vh;
   }
