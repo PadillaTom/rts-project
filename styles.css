@@ -367,7 +367,23 @@ ul {
   color: var(--NavColor);
   font-size: 0.7rem;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 850px) {
+  .hero-news {
+    width: 35rem;
+    height: 10rem;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-news-pretitle {
+    font-size: 1.2rem;
+  }
+  .hero-news-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
 }
 
 /* ::::::::::::: Television::::::::::::: */
@@ -472,6 +488,20 @@ ul {
   height: 2px;
   margin-bottom: 0.4rem;
 }
+@media screen and (min-width: 850px) {
+  .live-info {
+    font-size: 1.7rem;
+  }
+  .live-channel-1 {
+    font-size: 1.3rem;
+  }
+  .live-channel-2 {
+    font-size: 1.3rem;
+  }
+  .live-channel-3 {
+    font-size: 1.3rem;
+  }
+}
 /* Radio */
 .radio-container {
   margin-top: 2rem;
@@ -510,6 +540,17 @@ ul {
 .single-radio-icon {
   justify-self: right;
   color: var(--NavColor);
+}
+@media screen and (min-width: 825px) {
+  .single-radio-title {
+    font-size: 1.4rem;
+  }
+  .single-radio-icon {
+    font-size: 2rem;
+  }
+  .single-radio-header {
+    font-size: 3rem;
+  }
 }
 /* ::::::::::::: Newspaper ::::::::::::: */
 .newspaper-container {
@@ -608,6 +649,20 @@ ul {
   margin-top: 0.7rem;
   color: var(--NavColor);
 }
+@media screen and (min-width: 850px) {
+  .main-article-info {
+    font-size: 2.25rem;
+  }
+  .main-article-info h5 {
+    font-size: 1.5rem;
+  }
+  .secondary-article-info h5 {
+    font-size: 1.7rem;
+  }
+  .secondary-article-info {
+    font-size: 2rem;
+  }
+}
 /* End Newspaper */
 /* ::::::::::::: Gallery ::::::::::::: */
 .section-gallery {
@@ -620,12 +675,14 @@ ul {
     rgba(38, 38, 38, 0.885),
     rgba(0, 0, 0, 0.796)
   );
+  min-height: 55vh;
 }
 .tv-title {
   color: rgba(255, 255, 255, 0.926);
   padding-top: 2rem;
   width: 95vw;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .tv-title .underline {
   margin-bottom: 0;
@@ -692,7 +749,7 @@ ul {
 .prevBtn {
   border: none;
   position: absolute;
-  bottom: 2rem;
+  bottom: 0.3rem;
   left: 1rem;
   transition: var(--MainTransition);
 }
@@ -703,9 +760,24 @@ ul {
 .nextBtn {
   border: none;
   position: absolute;
-  bottom: 2rem;
+  bottom: 0.3rem;
   right: 1rem;
   transition: var(--MainTransition);
+}
+@media screen and (min-width: 850px) {
+  .tv-title {
+    margin-bottom: 1.5rem;
+  }
+  .prevBtn,
+  .nextBtn {
+    bottom: 0.7rem;
+  }
+  .single-slide h2 {
+    font-size: 3rem;
+  }
+  .single-slide h6 {
+    font-size: 1.5rem;
+  }
 }
 /* End Gallery */
 /* ::::::::::::: More ::::::::::::: */
@@ -893,6 +965,24 @@ ul {
   right: 1rem;
   top: 0.3rem;
   cursor: pointer;
+}
+@media screen and (min-width: 850px) {
+  .footer-search {
+    display: none;
+  }
+  .back-top {
+    font-size: 4rem;
+  }
+  .footer-copy {
+    font-size: 1.5rem;
+  }
+  .footer-area h4 {
+    font-size: 1.7rem;
+  }
+  .footer-container {
+    justify-content: center;
+    column-gap: 6rem;
+  }
 }
 /* End Footer */
 
