@@ -336,6 +336,7 @@ ul {
 /* Radio */
 .radio-container {
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .single-radio {
   display: grid;
@@ -344,6 +345,9 @@ ul {
   align-items: baseline;
   border-top: 0.7px solid #b3b3b3;
   padding: 1rem 0;
+}
+.last-radio {
+  border-bottom: 0.7px solid #b3b3b3;
 }
 .single-radio-title {
   font-size: 0.7rem;
@@ -358,7 +362,91 @@ ul {
   justify-self: right;
   color: var(--NavColor);
 }
-/* ::::::::::::: Globals ::::::::::::: */
+/* ::::::::::::: Newspaper ::::::::::::: */
+.newspaper-container {
+  margin-bottom: 3rem;
+}
+.single-newspaper {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15), -1px -1px 5px rgba(0, 0, 0, 0.15);
+  max-width: 97%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+.newspaper-header {
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+.newspaper-logo {
+  min-width: 5rem;
+}
+.newspaper-btn {
+  font-size: 2rem;
+  align-self: flex-start;
+  color: var(--NavColor);
+}
+.main-article {
+  max-width: 93%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-article-img img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.main-article-info {
+  margin-top: 0.9rem;
+}
+.main-article-info h3 {
+  color: var(--RtsColor);
+  letter-spacing: 2px;
+}
+.main-article-info h5 {
+  font-size: 1rem;
+  margin-top: 0.7rem;
+}
+.secondary-articles {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: start;
+  width: 93%;
+  margin: 0 auto;
+}
+.secondary-article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  border-top: 0.7px solid #b3b3b372;
+}
+.secondary-article-img {
+  margin: 1rem auto;
+}
+.secondary-article-img img {
+  width: 100%;
+}
+.secondary-article-info {
+  margin-top: 1rem;
+}
+.secondary-article-info h3 {
+  color: var(--RtsColor);
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.secondary-article-info h5 {
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  color: var(--NavColor);
+}
+/* End newspaper */
 /* ::::::::::::: Globals ::::::::::::: */
 /* ::::::::::::: Globals ::::::::::::: */
 
@@ -451,5 +539,4 @@ ul {
   right: 1rem;
   top: 0.3rem;
 }
-
 /* End Footer */
