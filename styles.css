@@ -675,7 +675,7 @@ ul {
     rgba(38, 38, 38, 0.885),
     rgba(0, 0, 0, 0.796)
   );
-  min-height: 55vh;
+  height: 50vh;
 }
 .tv-title {
   color: rgba(255, 255, 255, 0.926);
@@ -765,6 +765,9 @@ ul {
   transition: var(--MainTransition);
 }
 @media screen and (min-width: 850px) {
+  .section-gallery {
+    height: 50vh;
+  }
   .tv-title {
     margin-bottom: 1.5rem;
   }
