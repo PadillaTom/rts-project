@@ -13,8 +13,10 @@
     <title>My Tv Station</title>
   </head>
   <body>
+    <!-- Top of the Tops -->
+    <div id="top-of-tops"></div>
     <!-- Mobile Nav -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" id="top-nav">
       <div class="mobile-nav-container">
         <div class="user-logo-container">
           <i class="fas fa-user"></i>
@@ -57,17 +59,17 @@
         <div class="mobile-social-icons">
           <h5 class="mobile-social-text">Follow us:</h5>
           <ul class="social-icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-twitch"></i>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-twitter-square"></i></span>
+            <span><i class="fab fa-twitch"></i></span>
           </ul>
         </div>
       </div>
     </aside>
     <!-- End Mobile Dropdown -->
     <!-- Main Hero -->
-    <section class="section">
+    <section class="section" id="main-hero">
       <div class="main-hero">
         <article class="hero-img">
           <img src="./images/talkshow1.jpg" alt="news-img" />
@@ -530,7 +532,9 @@
           <h6>&copy; All rights Reserved</h6>
         </div>
         <div class="back-top">
-          <span><i class="fas fa-arrow-circle-up"></i></span>
+          <span
+            ><a href="#top-of-tops"> <i class="fas fa-arrow-circle-up"></i></a
+          ></span>
         </div>
       </div>
     </footer>
