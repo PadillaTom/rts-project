@@ -530,13 +530,13 @@ ul {
 .prevBtn {
   border: none;
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   left: 1rem;
 }
 .nextBtn {
   border: none;
   position: absolute;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 1rem;
 }
 /* End Gallery */
